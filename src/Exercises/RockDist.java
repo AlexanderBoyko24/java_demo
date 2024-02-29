@@ -11,5 +11,7 @@ public class RockDist {
         dist = 1100 * 1.5;
         System.out.println("расстояние до скалы " +
                 "составляет " + dist + " футов");
+
+
     }
 }
