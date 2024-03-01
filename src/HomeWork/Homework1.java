@@ -1,7 +1,7 @@
 package HomeWork;
 
 public class Homework1 {
-    public static void main(String args[]){
+    public static void main(String[] args){
         double dist;
 
         dist = 1100 * 7.2;
