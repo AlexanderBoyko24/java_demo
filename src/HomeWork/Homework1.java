@@ -20,7 +20,7 @@ public class Homework1 {
 
 
         //2 ВАРИАНТ ДОМАШНЕГО ЗАДАНИЯ
-        /* double echoTime = 3.0;
+        double echoTime = 3.0;
 
         // Скорость звука в футах в секунду
         double soundSpeed = 1100;
@@ -28,7 +28,6 @@ public class Homework1 {
         // Вычисляем расстояние до объекта
         double distance = (echoTime * soundSpeed) / 2;
 
-        System.out.println("Расстояние до объекта (например, скалы): " + distance + " футов"); */
+        System.out.println("Расстояние до объекта (например, скалы): " + distance + " футов");
     }
-}
 }
