@@ -14,7 +14,7 @@ public class DataTypes {
                 "Example: s = "+ s);
         System.out.println("Int type: has 32 bits, can have the value in range from from -2,147,483,648 to 2,147,483,647. " +
                 "Example: i = " + i);
-        System.out.println("Long type: has 64bits, can have the value in range from from -9,223,327,036,854,775,808 to 9,223,372,036,854,775,807. " +
+        System.out.println("Long type: has 64 bits, can have the value in range from from -9,223,327,036,854,775,808 to 9,223,372,036,854,775,807. " +
                 "Example: l = " + l);
 
         System.out.println("FLOATING POINT DATA TYPES");
