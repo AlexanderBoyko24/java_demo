@@ -1,4 +1,4 @@
-package Exercises4;
+package Exercise3;
 
 public class CASTDemo {
     public static void main (String [] args){

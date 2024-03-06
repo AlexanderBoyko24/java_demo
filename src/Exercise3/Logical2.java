@@ -1,4 +1,4 @@
-package Exercises4;
+package Exercise3;
 
 public class Logical2 {
     public static void main (String [] args){
