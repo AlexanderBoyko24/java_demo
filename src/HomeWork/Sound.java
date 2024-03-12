@@ -1,6 +1,6 @@
 package HomeWork;
 
-public class Homework1 {
+public class Sound {
     public static void main(String[] args){
         double dist;
 
@@ -20,14 +20,13 @@ public class Homework1 {
 
 
         //2 ВАРИАНТ ДОМАШНЕГО ЗАДАНИЯ
-        double echoTime = 3.0;
+        double time = 3.0;
 
-        // Скорость звука в футах в секунду
+
         double soundSpeed = 1100;
 
-        // Вычисляем расстояние до объекта
-        double distance = (echoTime * soundSpeed) / 2;
+          double distance = (time * soundSpeed) / 2;
 
-        System.out.println("Расстояние до объекта (например, скалы): " + distance + " футов");
+        System.out.println("Расстояние до  скалы: " + distance + " футов");
     }
 }
