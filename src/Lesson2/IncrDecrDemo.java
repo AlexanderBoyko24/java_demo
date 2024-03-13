@@ -10,6 +10,7 @@ public class IncrDecrDemo {
     y = -45;
 
     System.out.println("Int value of x & y:"  + x + " " + y);
+
     x++;
     y++;
     System.out.println("After postfix increment  x & y:"  + x + " " + y);
