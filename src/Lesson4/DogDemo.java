@@ -2,22 +2,15 @@ package Lesson4;
 
 public class DogDemo {
     public static void main (String [] args){
-        Dog myDog1 = new Dog();
+        Dog myDog0 = new Dog();
+        Dog myDog1 = new Dog("black", 10,"labrador", true,"Margater");
+        Dog myDog2 = new Dog("white", 2,"labrador", false,"Mark");
+        Dog myDog3 = new Dog("Polly");
 
-        myDog1.breed = "Labrador";
-        myDog1.age = 10;
-        myDog1.isFemale = true;
-        myDog1.name = "Margaret";
-
+        myDog0.printDogInfo();
         myDog1.printDogInfo();
-
-      Dog myDog2 = new Dog();
-        myDog2.breed = "Labrador";
-        myDog2.age = 10;
-        myDog2.isFemale = false;
-        myDog2.name = "Mark";
-
         myDog2.printDogInfo();
+        myDog3.printDogInfo();
 
     }
 }

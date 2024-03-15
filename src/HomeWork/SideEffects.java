@@ -1,6 +1,8 @@
 package HomeWork;
 
 public class SideEffects {
+   // && - И, || - ИЛИ   укороченные
+    //  & - И, | - ИЛИ обычные
     public static void main (String [] args){
         int i;
 
