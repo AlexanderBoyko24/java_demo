@@ -5,6 +5,7 @@ import java.io.IOException;
 public class Help {
     public static void main (String [] args) throws IOException {
         char  choice;
+
         System.out.println("Справка");
         System.out.println(" 1. if");
         System.out.println(" 2. switch");
