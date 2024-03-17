@@ -15,3 +15,4 @@ public class WrongCode {
     }
 }
 // вопрос: что тут считается
+// что вписать в System.out.println
