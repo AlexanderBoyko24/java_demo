@@ -4,6 +4,7 @@ public class LogicalOpTable {
     public static void main (String [] args){
         boolean p, q;
 /*
+тернарный оператор java
 if - else = ?1:0   ?- условие
 if (value){
 1 } else {0}
