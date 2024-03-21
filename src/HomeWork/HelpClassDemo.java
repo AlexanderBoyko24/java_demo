@@ -1,6 +1,6 @@
 package HomeWork;
 
- class Help{
+ class Help1 {
     void helpon(int what) {
         switch (what) {
             case '1':
@@ -65,7 +65,7 @@ package HomeWork;
 class HelpClassDemo {
     public static void main(String[] args) throws java.io.IOException {
         char choice, ignore;
-        Help hlpobj = new Help();
+        Help1 hlpobj = new Help1();
 
         for (; ; ) {
             do {
