@@ -1,4 +1,4 @@
-package Exercise6;
+package HomeWork;
 
 public class Bubble1 {
     public static void main(String[] args) {

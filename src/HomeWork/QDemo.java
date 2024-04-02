@@ -1,4 +1,4 @@
-package Exercise6;
+package HomeWork;
 
 class Queue {
     char q[]; // массив для хранения элементов очереди
