@@ -1,12 +1,12 @@
 package Exercises8;
 //super (список_ параметров) ;
 
-public class TwoDShapeSuper {
+public class TwoDShapeSuper2 {
     private double width;
     private double height;
 
     // Параметризированный конструктор
-    TwoDShapeSuper(double w, double h) {
+    TwoDShapeSuper2(double w, double h) {
         width = w;
         height = h;
     }
@@ -35,10 +35,10 @@ public class TwoDShapeSuper {
 
 // Подкласс для представления треугольников,
 // производный от класса TwoDShapeSuper
-class TriangleSup extends TwoDShapeSuper {
+class Triangle3 extends TwoDShapeSuper2 {
     private String style;
 
-    TriangleSup(String s, double w, double h) {
+    Triangle3(String s, double w, double h) {
         super(w, h); // вызвать конструктор суперкласса
         style = s;
     }
@@ -54,8 +54,8 @@ class TriangleSup extends TwoDShapeSuper {
 
 class Shapes4{
     public static void main (String [] args){
-        TriangleSup t1 = new TriangleSup("Закрашенный", 4.0, 4.0);
-        TriangleSup t2 = new TriangleSup("Контурный", 8.0, 12.0);
+        Triangle3 t1 = new Triangle3("Закрашенный", 4.0, 4.0);
+        Triangle3 t2 = new Triangle3("Контурный", 8.0, 12.0);
 
         System.out.println("Info about t1: ");
         t1.showStyle();

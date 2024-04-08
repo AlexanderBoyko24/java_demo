@@ -1,9 +1,27 @@
 package Lesson10;
 
-public class TwoDinentionalShape {
+public class TwoDimensionalShape {
 
     private double width;
     private double height;
+
+    TwoDimensionalShape() {
+        width = height = 0.0;
+    }
+
+    TwoDimensionalShape(double dim) {
+        width = height = dim;
+    }
+
+    TwoDimensionalShape(double width, double height) {
+        this.height = height;
+        this.width = width;
+    }
+
+    TwoDimensionalShape(TwoDimensionalShape prototype) {
+        width = prototype.width;
+        height = prototype.height;
+    }
 
     public double getWidth() {
         return width;
@@ -23,6 +41,5 @@ public class TwoDinentionalShape {
 
     void showDimensions() {
         System.out.println("Width & height: " + width + " " + height);
-
     }
 }
