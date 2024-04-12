@@ -20,16 +20,21 @@ public class Triangle extends TwoDimensionalShape {
     }
 
 
-    Triangle(Triangle prototype){
+    Triangle(Triangle prototype) {
         super(prototype);
         style = prototype.style;
     }
 
     double areaCalc() {
-        return getHeight() * getWidth() / 2;
+        return getHeight( ) * getWidth() / 2;
     }
 
     void showStyle() {
         System.out.println("Style is " + style);
+    }
+
+    @Override
+    void showDimensions() {
+        System.out.println(style);
     }
 }

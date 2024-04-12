@@ -1,5 +1,10 @@
 package Lesson6;
 
+import Lesson11.TwoDimensionShape;
+
+import java.util.Random;
+import java.util.Scanner;
+
 public class ArrayUtils {
     int[] array;
 
@@ -7,7 +12,8 @@ public class ArrayUtils {
         this.array = array;
     }
 
-    public void printArray() {
+
+    static void  printArray(int[] array) {
         System.out.println();
         for (int i = 0; i < array.length; i++)
             System.out.print(array[i] + " ");
@@ -18,15 +24,67 @@ public class ArrayUtils {
             array[i] = i;
     }
 
-    public int[] copyArray(int[] arrayToCopyin) {
-        for (int i = 0; i < arrayToCopyin.length; i++) {
+    public int[] copyArray(int[] arrayToCopyIn) {
+        for (int i = 0; i < arrayToCopyIn.length; i++) {
             if (i < array.length)
-                arrayToCopyin[i] = array[i];
+                arrayToCopyIn[i] = array[i];
             else break;
         }
-        System.out.println("Sorry, cannot copy");
-        return arrayToCopyin;
+        return arrayToCopyIn;
+    }
 
+    public static void printArray(TwoDimensionShape[] array) {
+        System.out.println();
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i].getName());
+            array[i].showDimensions();
+        }
+    }
+
+    static int[] setValuesRandom(int[] array, int min, int max) {
+        Random rnd = new Random();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = rnd.nextInt(max - min + 1) + min;
+        }
+        return array;
+    }
+
+    static int[] setValuesMathRandom(int[] array, int min, int max) {
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int) (Math.random() * (max - min + 1)) + min;
+        }
+        return array;
+    }
+
+    static int[] orderArray() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter array size:");
+        int size = in.nextInt();
+        int[] array = new int[Math.abs(size)];
+        System.out.println("Enter range from:");
+        int min = in.nextInt();
+        System.out.println("Enter range to:");
+        int max = in.nextInt();
+        if (max < min) {
+            int t = max;
+            max = min;
+            min = t;
+        }
+        return setValuesMathRandom(array, min, max);
+    }
+
+    public static void main(String[] args) {
+        int[] experiment = orderArray();
+        printArray(experiment);
     }
 }
+
+
+
+
+
+
+
+
 

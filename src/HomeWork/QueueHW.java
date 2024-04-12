@@ -1,16 +1,16 @@
-package Exercise7;
+package HomeWork;
 
 
 // Усовершенствованный класс очереди, предназначенной
 // для хранения символьных значений
 
-class Queue {
+class QueueHW {
                          // Эти члены класса теперь являются закрытыми
     private char q[]; // массив для хранения элементов очереди
     private int putloc, getloc; // индексы для вставки и
                                 // извлечения элементов очереди
 
-    Queue(int size) {
+    QueueHW(int size) {
         q = new char[size + 1]; // выделить память для очереди
         putloc = getloc = 0;
             }

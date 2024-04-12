@@ -34,8 +34,8 @@ class Queue {
 
 class QDemo{
     public static void main (String [] args){
-        Queue bigQ = new Queue(100);
-        Queue smallQ = new Queue(4);
+        QueueHW bigQ = new QueueHW(100);
+        QueueHW smallQ = new QueueHW(4);
         char ch;
         int i;
         System.out.println("Use of queue bigQ for saving alphabet");
