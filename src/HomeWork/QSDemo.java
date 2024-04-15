@@ -1,4 +1,4 @@
-package Exercise7;
+package HomeWork;
 
 // Упражнение 6.3. Простая версия класса Quicksort,
 // реализующего быструю сортировку

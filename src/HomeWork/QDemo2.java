@@ -1,4 +1,4 @@
-package Exercise7;
+package HomeWork;
 
 // Класс, реализующий очередь для хранения символов
 class Queue1 {

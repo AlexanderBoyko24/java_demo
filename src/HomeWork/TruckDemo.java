@@ -1,4 +1,4 @@
-package Exercises8;
+package HomeWork;
 
 // Создание подкласса класса Vehicle для грузовиков
 class Vehicle {
