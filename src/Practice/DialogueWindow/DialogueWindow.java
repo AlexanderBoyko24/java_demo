@@ -1,4 +1,4 @@
-package Practice;
+package Practice.DialogueWindow;
 
 import javax.swing.*;
 

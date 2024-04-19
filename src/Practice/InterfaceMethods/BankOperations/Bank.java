@@ -1,4 +1,4 @@
-package Practice.BankOperations;
+package Practice.InterfaceMethods.BankOperations;
 
 class Bank {
     private String name;

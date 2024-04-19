@@ -1,4 +1,4 @@
-package Practice.BankOperations;
+package Practice.InterfaceMethods.BankOperations;
 
 public interface Customer {
     void openAccount();

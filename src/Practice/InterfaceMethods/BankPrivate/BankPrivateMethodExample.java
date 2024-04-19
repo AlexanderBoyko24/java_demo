@@ -1,4 +1,4 @@
-package Practice.BankPrivate;
+package Practice.InterfaceMethods.BankPrivate;
 
     public class BankPrivateMethodExample {
         public static void main(String[] args) {

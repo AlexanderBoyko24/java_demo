@@ -1,4 +1,4 @@
-package Practice.BankOperations;
+package Practice.InterfaceMethods.BankOperations;
 // Create a class for a SavingsAccount customer
 
  class SavingsAccountCustomer implements Customer{

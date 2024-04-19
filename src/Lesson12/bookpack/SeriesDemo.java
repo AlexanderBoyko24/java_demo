@@ -1,9 +1,12 @@
 package Lesson12.bookpack;
 
+import Lesson6.ArrayUtils;
+
 public class SeriesDemo {
     public static void main(String[] args) {
         ByTwos ob = new ByTwos();
         ByThrees ob2 = new ByThrees();
+        ByFives ob5 = new ByFives();
 
         showSeries(5,ob);
 
@@ -23,6 +26,10 @@ public class SeriesDemo {
         System.out.println("By Threes");
 
        showSeries(5,ob2);
+
+        ArrayUtils.printArray(ob.getNextArray(10));
+        ArrayUtils.printArray(ob2.getNextArray(10));
+        ArrayUtils.printArray(ob5.getNextArray(10));
     }
 
 

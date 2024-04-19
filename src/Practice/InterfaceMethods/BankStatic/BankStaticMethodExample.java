@@ -1,4 +1,4 @@
-package Practice.BankStatic;
+package Practice.InterfaceMethods.BankStatic;
 
 public class BankStaticMethodExample {
     public static void main(String[] args) {

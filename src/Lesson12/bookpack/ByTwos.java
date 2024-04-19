@@ -1,5 +1,7 @@
 package Lesson12.bookpack;
 
+import Lesson13.A;
+
 public class ByTwos implements Series {
     int start;
     int val;
@@ -8,7 +10,7 @@ public class ByTwos implements Series {
     ByTwos() {
         start = 0;
         val = 0;
-        prev = -2;
+      prev = -2;
     }
 
     @Override
@@ -22,7 +24,7 @@ public class ByTwos implements Series {
     public void reset() {
         start = 0;
         val = 0;
-        prev = -2;
+     prev = -2;
     }
 
     @Override
@@ -31,6 +33,8 @@ public class ByTwos implements Series {
         val = x;
         prev = x-2;
     }
+
+
 
     int getPrevious(){
         return prev;

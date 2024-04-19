@@ -1,4 +1,4 @@
-package Practice;
+package Practice.Hypotenuse;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Practice.BankDefault;
+package Practice.InterfaceMethods.BankDefault;
 
 public class BankExample {
     public static void main(String[] args) {

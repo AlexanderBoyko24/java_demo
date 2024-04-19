@@ -1,4 +1,4 @@
-package Practice.BankPrivate;
+package Practice.InterfaceMethods.BankPrivate;
 
 public class SavingsAccount implements Bank{
     private double balance;

@@ -1,4 +1,4 @@
-package Practice.BankDefault;
+package Practice.InterfaceMethods.BankDefault;
 
 public interface Bank {
     // Abstract methods

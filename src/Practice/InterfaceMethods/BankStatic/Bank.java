@@ -1,4 +1,4 @@
-package Practice.BankStatic;
+package Practice.InterfaceMethods.BankStatic;
 
 public interface Bank {
     double getBalance();

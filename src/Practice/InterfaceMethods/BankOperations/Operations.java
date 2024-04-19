@@ -1,4 +1,4 @@
-package Practice.BankOperations;
+package Practice.InterfaceMethods.BankOperations;
 
 public class Operations {
     public static void main(String[] args) {
