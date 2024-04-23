@@ -2,7 +2,7 @@ package Practice.Array;
 
 import java.util.ArrayList;
 
-public class Main {
+public class ArrayListString {
     public static void main (String [] args){
         ArrayList<String> food = new ArrayList<String>();
 

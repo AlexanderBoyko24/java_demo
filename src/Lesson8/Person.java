@@ -12,21 +12,33 @@ public class Person {
         this.name = name;
         this.age = age < 18 ? 0 : age;
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter password first");
+        System.out.println("Set your password ");
         password = in.nextLine();
-    }
-
-    public void setAge(int age) {
-        System.out.println("Enter password first");
-        Scanner in = new Scanner(System.in);
-        String password = in.nextLine();
-        if (password.equals(this.password)) {
-            this.age = age;
-        } else System.out.println("Wrong password! Age is not suitable");
     }
 
     public int getAge() {
         return age;
+    }
+
+    private String getName(String password) throws IllegalAccessException {
+        if (password.equals(this.password))
+            return name;
+        else
+            throw new IllegalAccessException();
+    }
+
+    public void requestpersonalInfo() {
+        System.out.println("Enter password first: ");
+        Scanner in = new Scanner(System.in);
+        String passwordCandidate = in.nextLine();
+        try{
+            System.out.println(getName(passwordCandidate));
+            System.out.println(getName(passwordCandidate));
+            System.out.println(getName(passwordCandidate));
+        } catch (IllegalAccessException e){
+//logging security violation event
+            System.out.println("the password is incorrect. No personal info will be provided ");
+        }
     }
 
 }

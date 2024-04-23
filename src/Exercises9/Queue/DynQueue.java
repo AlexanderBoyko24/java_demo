@@ -15,11 +15,12 @@ class DynQueue implements ICharQ {
     public void put(char ch) {
         if (putloc == q.length - 1) {
 // увеличить размер очереди
-            char t[] = new char[q.length * 2];
+            char[] t = new char[q.length * 2];
 
             // Скопировать элементы в новую очередь
-            for (int i = 0; i < q.length; i++)
+            for (int i = 0; i < q.length; i++) {
                 t[i] = q[i];
+            }
             q = t;
         }
 

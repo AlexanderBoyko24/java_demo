@@ -19,7 +19,7 @@ public class ArrayUtils {
             System.out.print(array[i] + " ");
     }
 
-    public void initArray() {
+    public static  void initArray(int[] array) {
         for (int i = 0; i < array.length; i++)
             array[i] = i;
     }

@@ -1,5 +1,7 @@
 package Exercises9.Queue;
 
+import Lesson14.Dog;
+
 // Демонстрация трех реализаций интерфейса ICharQ
 class IQDemo {
     public static void main(String[] args) {
@@ -9,56 +11,96 @@ class IQDemo {
 
         ICharQ iQ;
 
-        char ch;
+        char ch = 0;
         int i;
+
+
 
         iQ = q1;
         // Поместить ряд символов в очередь фиксированного размера
-        for (i = 0; i < 10; i++)
-            iQ.put((char) ('A' + i));
+        for (i = 0; i < 10; i++) {
+            try {
+                iQ.put((char) ('A' + i));
+            } catch (QueueFullException e) {
+                e.printStackTrace();
+            }
+        }
 
         // Отобразить содержимое очереди
         System.out.print("Содержимое FixedQueue: ");
         for (i = 0; i < 10; i++) {
-            ch = iQ.get();
+            try {
+                ch = iQ.get();
+            } catch (QueueEmptyException e) {
+                e.printStackTrace();
+            }
             System.out.print(ch);
         }
         System.out.println();
 
+
+
         iQ = q2;
         // Поместить ряд символов в динамическую очередь
-        for (i = 0; i < 10; i++)
-            iQ.put((char) ('Z' - i));
+        for (i = 0; i < 10; i++) {
+            try {
+                iQ.put((char) ('A' + i));
+            } catch (QueueFullException e) {
+               e.printStackTrace();
+            }
+        }
 
         // Отобразить содержимое очереди
         System.out.print("Содержимое DynQueue: ");
         for (i = 0; i < 10; i++) {
-            ch = iQ.get();
+            try {
+                ch = iQ.get();
+            } catch (QueueEmptyException e) {
+                e.printStackTrace();
+            }
             System.out.print(ch);
         }
         System.out.println();
 
         iQ = q3;
         // Поместить ряд символов в кольцевую очередь
-        for (i = 0; i < 10; i++)
-            iQ.put((char) ('A' + i));
+        for (i = 0; i < 10; i++) {
+            try {
+                iQ.put((char) ('A' + i));
+            } catch (QueueFullException e) {
+                e.printStackTrace();
+            }
+        }
 
         // Отобразить содержимое очереди
         System.out.print("Coдepжимoe CircularQueue: ");
         for (i = 0; i < 10; i++) {
-            ch = iQ.get();
+            try {
+                ch = iQ.get();
+            } catch (QueueEmptyException e) {
+                e.printStackTrace();
+            }
             System.out.print(ch);
         }
         System.out.println();
 
         // Поместить больше символов в кольцевую очередь
-        for (i = 10; i < 20; i++)
-            iQ.put((char) ('A' + i));
+        for (i = 10; i < 20; i++) {
+            try {
+                iQ.put((char) ('A' + i));
+            } catch (QueueFullException e) {
+                e.printStackTrace();
+            }
+        }
 
         // Отобразить содержимое очереди
         System.out.print("Coдepжимoe CircularQueue: ");
         for (i = 0; i < 10; i++) {
-            ch = iQ.get();
+            try {
+                ch = iQ.get();
+            } catch (QueueEmptyException e) {
+                e.printStackTrace();
+            }
             System.out.print(ch);
         }
 
@@ -66,9 +108,22 @@ class IQDemo {
 
         // Поместить символы в кольцевую очередь и извлечь их оттуда
         for (i = 0; i < 20; i++) {
-            iQ.put((char) ('A' + i));
-            ch = iQ.get();
+            try {
+                iQ.put((char) ('A' + i));
+            } catch (QueueFullException e) {
+                e.printStackTrace();
+            }
+            try {
+                ch = iQ.get();
+            } catch (QueueEmptyException e) {
+                e.printStackTrace();
+            }
             System.out.print(ch);
+
+
         }
+        QueueFullException myobj = new QueueFullException(7);
+        System.out.println("Trying to print object of a class");
+        System.out.println(myobj);
     }
 }

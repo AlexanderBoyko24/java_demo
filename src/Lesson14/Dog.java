@@ -6,7 +6,7 @@ public class Dog {
     boolean isLeashPutOn;
     boolean isMuzzlePutOn;
 
-    Dog(String name){
+    public Dog(String name){
         this.name = name;
     }
 
@@ -30,7 +30,18 @@ public class Dog {
 
         }
     }
-public static void main (String [] args){
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", isCollarPutOn=" + isCollarPutOn +
+                ", isLeashPutOn=" + isLeashPutOn +
+                ", isMuzzlePutOn=" + isMuzzlePutOn +
+                '}';
+    }
+
+    public static void main (String [] args){
    Dog dog = new Dog("Goodboy");
    dog.putCollar();
    dog.putMuzzle();
@@ -38,7 +49,7 @@ public static void main (String [] args){
    dog.walk();
    }catch (DogIsNotReadyException e){
        e.printStackTrace();
-       System.out.println("check. " +
+       System.out.println("check. "  +
                "Is collar on?" + dog.isCollarPutOn +
                "\nIs leash put on?" + dog.isLeashPutOn +
                "\nIs muzzle put on? " + dog.isMuzzlePutOn);

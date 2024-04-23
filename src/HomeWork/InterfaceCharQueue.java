@@ -1,2 +1,6 @@
-package HomeWork;public interface InterfaceCharQ {
+package HomeWork;
+
+public interface InterfaceCharQueue {
+    void put(char ch);
+    char get();
 }
