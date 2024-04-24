@@ -1,4 +1,4 @@
-package Exercises10;
+package Exercises10.ExceptionDemo;
 /* Исключение может быть сгенерировано одним методом,
 а перехвачено другим */
  class ExcTest {

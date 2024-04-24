@@ -1,4 +1,4 @@
-package Exercises10;
+package Exercises10.ExceptionDemo;
 
 public class ExcDemo3 {
     public static void main(String[] args) {
