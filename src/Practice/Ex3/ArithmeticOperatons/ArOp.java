@@ -1,4 +1,4 @@
-package Practice.ArithmeticOperatons;
+package Practice.Ex3.ArithmeticOperatons;
 
 import java.util.Scanner;
 

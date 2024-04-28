@@ -25,6 +25,8 @@ import java.util.LinkedList;
             cars.addFirst(ford);
             cars.addLast(fiat);
             System.out.println(cars);
+
+
         }
 
         @Override

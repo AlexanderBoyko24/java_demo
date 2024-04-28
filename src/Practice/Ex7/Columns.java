@@ -2,11 +2,10 @@ package Practice.Ex7;
 
 import java.util.Scanner;
 
-public class Line {
+public class Columns {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        int rows;
         int columns;
         String symbol = "";
 

@@ -1,14 +1,8 @@
-package Practice.Ex5;
+package Practice.Ex5.MinMaxAvg;
+
 import java.util.Scanner;
 
-// Создаем собственное исключение для некорректного ввода числа
-class InvalidNumberException extends Exception {
-    public InvalidNumberException(String message) {
-        super(message);
-    }
-}
-
-public class MinMAx2 {
+public class MinMaxAvg {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

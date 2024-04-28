@@ -2,7 +2,7 @@ package Practice.Collections.LinkedList;
 
 import java.util.LinkedList;
 
-public class linkedListExample2 {
+public class linkedListAddInside {
     public static void main(String[] args) {
 
         String str1 = new String("Hello World!");

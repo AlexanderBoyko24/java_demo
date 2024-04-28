@@ -1,4 +1,4 @@
-package Practice.Collections;
+package Practice.Collections.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

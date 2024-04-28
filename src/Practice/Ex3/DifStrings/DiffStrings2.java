@@ -1,4 +1,4 @@
-package Practice.DifStrings;
+package Practice.Ex3.DifStrings;
 
 public class DiffStrings2 {
 

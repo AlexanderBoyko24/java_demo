@@ -1,4 +1,4 @@
-package Practice.SquareArea;
+package Practice.Ex3.SquareArea;
 
 import java.util.Scanner;
 

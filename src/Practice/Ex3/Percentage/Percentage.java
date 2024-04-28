@@ -1,4 +1,4 @@
-package Practice.Percentage;
+package Practice.Ex3.Percentage;
 
 import java.util.Scanner;
 

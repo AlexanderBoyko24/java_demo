@@ -1,6 +1,6 @@
 package Practice.Ex9;
 
-public class ArrayOperations {
+public class ArrayOperationsEven {
     public static void main(String[] args) {
         int[] numbers = {-3, 85, -40, 37, 4, 2, 7, 250, 80};
 
