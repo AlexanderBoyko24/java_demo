@@ -1,4 +1,4 @@
-package Chaper14;
+package Chaper14.SimpleLambda;
 
 public interface MyValue {
     double getMyValue();

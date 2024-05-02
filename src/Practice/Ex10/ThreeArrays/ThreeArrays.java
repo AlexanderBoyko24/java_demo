@@ -1,4 +1,4 @@
-package Practice.Ex10;
+package Practice.Ex10.ThreeArrays;
 
 
 import java.util.Arrays;

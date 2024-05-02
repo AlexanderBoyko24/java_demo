@@ -1,4 +1,4 @@
-package Chapter13.Generics.BankAccount;
+package Chapter13.Generics.BankAccount2;
 
 public interface Accountable<T> {
     T getId();

@@ -9,7 +9,7 @@ public enum Severity {
         score = i;
     }
 
-    int getSeverity() {
+    int getScore() {
         return score;
     }
 

@@ -1,4 +1,4 @@
-package Chaper14;
+package Chaper14.SimpleLambda;
 
 class LambdaDemo {
     public static void main(String[] args) {
